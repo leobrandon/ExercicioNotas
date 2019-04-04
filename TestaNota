@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class TestaNota {
+    public static void main(String[] args) {
+        String nome;
+        double n1, n2;
+
+        Scanner ler = new Scanner(System.in);
+
+        Aluno leonardo = new Aluno();
+
+        System.out.print("Digite o nome do aluno: ");
+        nome = ler.next();
+
+        System.out.print("Digite a primeira nota: ");
+        n1 = ler.nextDouble();
+
+        System.out.print("Digite a segunda nota: ");
+        n2 = ler.nextDouble();
+
+        leonardo.setNome(nome);
+        leonardo.setNota1(n1);
+        leonardo.setNota2(n2);
+        leonardo.calculaMedia();
+    }
+}
